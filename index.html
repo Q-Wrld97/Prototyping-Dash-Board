@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Prototpying Form</title>
+</head>
+
+<body>
+  <div class="container" id="CourseForm">
+    <form>
+      <div class="form-group">
+        <label for="text">Course Name</label>
+        <input type="text" class="form-control" id="CourseName" aria-describedby="CourseName"
+          placeholder="Enter 3 Letter Acronym For Course Name">
+        <div>
+          <label for="text">Class Days:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Monday">
+            <label class="form-check-label" for="inlineCheckbox1">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Tuesday">
+            <label class="form-check-label" for="inlineCheckbox2">T</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Wednesday">
+            <label class="form-check-label" for="inlineCheckbox3">W</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Thursday">
+            <label class="form-check-label" for="inlineCheckbox4">Th</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Friday">
+            <label class="form-check-label" for="inlineCheckbox5">F</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Saturday">
+            <label class="form-check-label" for="inlineCheckbox6">S</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Sunday">
+            <label class="form-check-label" for="inlineCheckbox8">Su</label>
+          </div>
+        </div>
+        <label for="text">Term Length</label>
+        <select class="form-control form-control-sm">
+          <option>16 weeks</option>
+          <option>12 weeks</option>
+          <option>8 weeks</option>
+        </select>
+        <label for="text">Credit Hours</label>
+        <select class="form-control form-control-sm">
+          <option>3 Credits</option>
+          <option>4 Credits</option>
+        </select>
+        <label for="text">Grading Scale</label>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1"><img id="gradescale" src="GradeScale1.png"></label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2"><img id ="gradescale" src="GradeScale2.png"></label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input onclick="yesnoCheck()" type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio3">Custom</label>
+          <div id="ifYes" style="display:none" >
+            <p><input id="ifYes"  type="number" placeholder="A"/></p>
+            <p><input id="ifYes"  type="number" placeholder="A-"/></p>
+            <p><input id="ifYes"  type="number" placeholder="B"/></p>
+            <p><input id="ifYes"  type="number" placeholder="B-"/></p>
+            <p><input id="ifYes"  type="number" placeholder="C"></p>
+            <p><input id="ifYes"  type="number" placeholder="D"/></p>
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
