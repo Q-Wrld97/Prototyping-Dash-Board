@@ -15,7 +15,7 @@
   <div class="container" id="CourseForm">
     <form>
       <div class="form-group">
-        <label id="header" for="text">Course Name</label>
+        <label class="boxlength" id="header" for="text">Course Name</label>
         <input type="text" class="form-control" id="CourseName" aria-describedby="CourseName" maxlength="3" oninput="let p = this.selectionStart; this.value = this.value.toUpperCase();this.setSelectionRange(p, p);" placeholder="Enter 3 Letter Acronym"
           >
           <div>
@@ -54,13 +54,13 @@
             </div>
           </div>
         <label id="header" for="text">Term Length</label>
-        <select class="form-control form-control-sm">
+        <select id ="boxlength" class="form-control form-control-sm">
           <option>16 Weeks</option>
           <option>12 Weeks</option>
           <option>8 Weeks</option>
         </select>
         <label id="header" for="text">Credit Hours</label>
-        <select class="form-control form-control-sm">
+        <select id ="boxlength" class="form-control form-control-sm">
           <option>3 Credits</option>
           <option>4 Credits</option>
         </select>
