@@ -83,31 +83,47 @@
           </div>
         </div>
         <div>
-          <label for="text">Grade Category (check all that apply)</label>   
+          <label for="text">Weighted Category (check all that apply)</label>   
           <div class="col-md-12">
             <div class="checkbox">
-              <label><input type="checkbox" value="">Final</label>
+              <label><input onclick="GradeCategory()" id="Exam" type="checkbox" value="">Exams (if equally weighted)</label>
+              <input id="CategoryYesExam"style="display:none" type="number" placeholder="% of 100y">
+              <input id="CategoryYesExam2"style="display:none" type="number" placeholder="Quantity">
+            </div>
+            <div class="checkbox">
+              <label><input onclick="GradeCategory()" id="Final" type="checkbox" value="">Final</label>
+              <input id="CategoryYesFinal"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesFinal2"style="display:none" type="number" placeholder="Quantity">
             </div>
               <div class="checkbox">
-              <label><input type="checkbox" value="">Midterm</label>
+              <label><input onclick="GradeCategory()" id="Midterm" type="checkbox" value="">Midterm</label>
+              <input id="CategoryYesMidterm"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesMidterm2"style="display:none" type="number" placeholder="Quantity">
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Quiz</label>
+              <label><input onclick="GradeCategory()" id="Quiz" type="checkbox" value="">Quiz</label>
+              <input id="CategoryYesQuiz"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesQuiz2"style="display:none" type="number" placeholder="Quantity">
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">HW</label>
+              <label><input onclick="GradeCategory()"  id="HW" type="checkbox" value="">HW</label>
+              <input id="CategoryYesHW"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesHW2"style="display:none" type="number" placeholder="Quantity">
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Discussion</label>
+              <label><input onclick="GradeCategory()" id="Discussion" type="checkbox" value="">Discussion</label>
+              <input id="CategoryYesDiscussion"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesDiscussion2"style="display:none" type="number" placeholder="Quantity">
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Exam</label>
+              <label><input onclick="GradeCategory()" id="Project" type="checkbox" value="">Project</label>
+              <input id="CategoryYesProject"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesProject2"style="display:none" type="number" placeholder="Quantity">
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Project</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Participation</label>
+              <label><input onclick="GradeCategory()" id="Participation" type="checkbox" value="">Participation</label>
+              <input id="CategoryYesParticipation"style="display:none" type="number" placeholder="% of 100">
+              <input id="CategoryYesParticipation2"style="display:none" type="number" placeholder="Quantity">
             </div>
           </div>
       </div>

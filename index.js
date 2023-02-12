@@ -10,5 +10,85 @@ function yesnoCheck() {
     }
 }
 
+function GradeCategory() {
+  //Exam
+  if (document.getElementById('Exam').checked) {
+    document.getElementById('CategoryYesExam').style.display = 'block';
+    document.getElementById('CategoryYesExam2').style.display = 'block';
+  }
+  if (document.getElementById('Exam').checked === false) {
+    document.getElementById('CategoryYesExam').style.display = 'none';
+    document.getElementById('CategoryYesExam2').style.display = 'none';
+  }
+  //Final
+  if (document.getElementById('Final').checked) {
+      document.getElementById('CategoryYesFinal').style.display = 'block';
+      document.getElementById('CategoryYesFinal2').style.display = 'block';
+  }
+  if (document.getElementById('Final').checked === false) {
+    document.getElementById('CategoryYesFinal').style.display = 'none';
+    document.getElementById('CategoryYesFinal2').style.display = 'none';
+  }
+  //Midterm
+  if (document.getElementById('Midterm').checked) {
+    document.getElementById('CategoryYesMidterm').style.display = 'block';
+    document.getElementById('CategoryYesMidterm2').style.display = 'block';
+  }
+  if (document.getElementById('Midterm').checked === false) {
+    document.getElementById('CategoryYesMidterm').style.display = 'none';
+    document.getElementById('CategoryYesMidterm2').style.display = 'none';
+  }
+  //Quiz
+  if (document.getElementById('Quiz').checked) {
+    document.getElementById('CategoryYesQuiz').style.display = 'block';
+    document.getElementById('CategoryYesQuiz2').style.display = 'block';
+  }
+  if (document.getElementById('Quiz').checked === false) {
+    document.getElementById('CategoryYesQuiz').style.display = 'none';
+    document.getElementById('CategoryYesQuiz2').style.display = 'none';
+  }
+  //HW
+  if (document.getElementById('HW').checked) {
+    document.getElementById('CategoryYesHW').style.display = 'block';
+    document.getElementById('CategoryYesHW2').style.display = 'block';
+  }
+  if (document.getElementById('HW').checked === false) {
+    document.getElementById('CategoryYesHW').style.display = 'none';
+    document.getElementById('CategoryYesHW2').style.display = 'none';
+  }
+  
+  //Discussion
+  if (document.getElementById('Discussion').checked) {
+    document.getElementById('CategoryYesDiscussion').style.display = 'block';
+    document.getElementById('CategoryYesDiscussion2').style.display = 'block';
+  }
+  if (document.getElementById('Discussion').checked === false) {
+    document.getElementById('CategoryYesDiscussion').style.display = 'none';
+    document.getElementById('CategoryYesDiscussion2').style.display = 'none';
+  }
+
+  //Project
+  if (document.getElementById('Project').checked) {
+    document.getElementById('CategoryYesProject').style.display = 'block';
+    document.getElementById('CategoryYesProject2').style.display = 'block';
+  }
+  if (document.getElementById('Project').checked === false) {
+    document.getElementById('CategoryYesProject').style.display = 'none';
+    document.getElementById('CategoryYesProject2').style.display = 'none';
+  }
+
+  //Participation
+  if (document.getElementById('Participation').checked) {
+    document.getElementById('CategoryYesParticipation').style.display = 'block';
+    document.getElementById('CategoryYesParticipation2').style.display = 'block';
+  }
+  if (document.getElementById('Participation').checked === false) {
+    document.getElementById('CategoryYesParticipation').style.display = 'none';
+    document.getElementById('CategoryYesParticipation2').style.display = 'none';
+  }
+
+
+}
+
 
 
