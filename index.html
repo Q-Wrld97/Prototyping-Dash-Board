@@ -19,41 +19,41 @@
         <label for="text">Course Name</label>
         <input type="text" class="form-control" id="CourseName" aria-describedby="CourseName"
           placeholder="Enter 3 Letter Acronym For Course Name">
-        <div>
-          <label for="text">Class Days:</label>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Monday">
-            <label class="form-check-label" for="inlineCheckbox1">M</label>
+          <div>
+            <label for="text">Class Days:</label>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Monday">
+              <label class="form-check-label" for="inlineCheckbox1">M</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Tuesday">
+              <label class="form-check-label" for="inlineCheckbox2">T</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Wednesday">
+              <label class="form-check-label" for="inlineCheckbox3">W</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Thursday">
+              <label class="form-check-label" for="inlineCheckbox4">Th</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Friday">
+              <label class="form-check-label" for="inlineCheckbox5">F</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Saturday">
+              <label class="form-check-label" for="inlineCheckbox6">S</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()" class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Sunday">
+              <label class="form-check-label" for="inlineCheckbox7">Su</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input onclick="classDayCheck()"class="form-check-input" type="checkbox" id="inlineCheckbox8" value="Sunday">
+              <label class="form-check-label" for="inlineCheckbox8">Remote</label>
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Tuesday">
-            <label class="form-check-label" for="inlineCheckbox2">T</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Wednesday">
-            <label class="form-check-label" for="inlineCheckbox3">W</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Thursday">
-            <label class="form-check-label" for="inlineCheckbox4">Th</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Friday">
-            <label class="form-check-label" for="inlineCheckbox5">F</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Saturday">
-            <label class="form-check-label" for="inlineCheckbox6">S</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Sunday">
-            <label class="form-check-label" for="inlineCheckbox7">Su</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="Sunday">
-            <label class="form-check-label" for="inlineCheckbox8">Remote</label>
-          </div>
-        </div>
         <label for="text">Term Length</label>
         <select class="form-control form-control-sm">
           <option>16 weeks</option>
@@ -97,43 +97,43 @@
           <div class="col-md-12">
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Exam" type="checkbox" value="">Exams (if equally weighted)</label>
-              <input id="CategoryYesExam"style="display:none" type="number" placeholder="% of 100y">
-              <input id="CategoryYesExam2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesExam"style="display:none" type="number" min="0" max="100"placeholder="% of 100y">
+              <input id="CategoryYesExam2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Final" type="checkbox" value="">Final</label>
-              <input id="CategoryYesFinal"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesFinal2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesFinal" style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesFinal2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
               <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Midterm" type="checkbox" value="">Midterm</label>
-              <input id="CategoryYesMidterm"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesMidterm2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesMidterm"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesMidterm2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Quiz" type="checkbox" value="">Quiz</label>
-              <input id="CategoryYesQuiz"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesQuiz2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesQuiz"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesQuiz2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()"  id="HW" type="checkbox" value="">HW</label>
-              <input id="CategoryYesHW"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesHW2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesHW"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesHW2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Discussion" type="checkbox" value="">Discussion</label>
-              <input id="CategoryYesDiscussion"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesDiscussion2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesDiscussion"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesDiscussion2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Project" type="checkbox" value="">Project</label>
-              <input id="CategoryYesProject"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesProject2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesProject"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesProject2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
             <div class="checkbox">
               <label><input onclick="GradeCategory()" id="Participation" type="checkbox" value="">Participation</label>
-              <input id="CategoryYesParticipation"style="display:none" type="number" placeholder="% of 100">
-              <input id="CategoryYesParticipation2"style="display:none" type="number" placeholder="Quantity">
+              <input id="CategoryYesParticipation"style="display:none" type="number" min="0" max="100" placeholder="% of 100">
+              <input id="CategoryYesParticipation2"style="display:none" type="number" min="0" placeholder="Quantity">
             </div>
           </div>
       </div>

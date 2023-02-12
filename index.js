@@ -86,9 +86,41 @@ function GradeCategory() {
     document.getElementById('CategoryYesParticipation').style.display = 'none';
     document.getElementById('CategoryYesParticipation2').style.display = 'none';
   }
-
-
 }
+
+  // Check if remote is CHECKED than rest of the days must be UNCHECKED
+  function classDayCheck() {
+    if (document.getElementById("inlineCheckbox8").checked === true){
+      document.getElementById("inlineCheckbox1").checked = false;
+      document.getElementById("inlineCheckbox2").checked = false;
+      document.getElementById("inlineCheckbox3").checked = false;
+      document.getElementById("inlineCheckbox4").checked = false;
+      document.getElementById("inlineCheckbox5").checked = false;
+      document.getElementById("inlineCheckbox6").checked = false;
+      document.getElementById("inlineCheckbox7").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox1").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox2").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox3").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox4").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox5").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox6").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+    if (document.getElementById("inlineCheckbox7").checked === true){
+      document.getElementById("inlineCheckbox8").checked = false;
+    }
+  }
 
 
 
