@@ -17,7 +17,7 @@
     <form>
       <div class="form-group">
         <label for="text">Course Name</label>
-        <input type="text" class="form-control" id="CourseName" aria-describedby="CourseName"
+        <input type="text" class="form-control" id="CourseName" aria-describedby="CourseName" maxlength="3" style="text-transform:uppercase"
           placeholder="Enter 3 Letter Acronym For Course Name">
           <div>
             <label for="text">Class Days:</label>
@@ -78,18 +78,18 @@
           <input onclick="yesnoCheck()" type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
           <label class="custom-control-label" for="customRadio3">Custom</label>
           <div id="ifYes" style="display:none" >
-            <p><input id="ifYes"  type="number" placeholder="A"/></p>
-            <p><input id="ifYes"  type="number" placeholder="A-"/></p>
-            <p><input id="ifYes"  type="number" placeholder="B+"/></p>
-            <p><input id="ifYes"  type="number" placeholder="B"/></p>
-            <p><input id="ifYes"  type="number" placeholder="B-"></p>
-            <p><input id="ifYes"  type="number" placeholder="C+"/></p>
-            <p><input id="ifYes"  type="number" placeholder="C"/></p>
-            <p><input id="ifYes"  type="number" placeholder="C-"/></p>
-            <p><input id="ifYes"  type="number" placeholder="D+"/></p>
-            <p><input id="ifYes"  type="number" placeholder="D"></p>
-            <p><input id="ifYes"  type="number" placeholder="D-"/></p>
-            <p><input id="ifYes"  type="number" placeholder="F"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="A"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="A-"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="B+"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="B"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="B-"></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="C+"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="C"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="C-"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="D+"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="D"></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="D-"/></p>
+            <p><input id="ifYes"  type="number" min="0" max="100" placeholder="F"/></p>
           </div>
         </div>
         <div>
@@ -137,6 +137,7 @@
             </div>
           </div>
       </div>
+      <button>Submit</button>
     </form>
   </div>
 
